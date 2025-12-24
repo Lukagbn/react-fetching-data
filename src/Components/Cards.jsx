@@ -12,7 +12,7 @@ const Cards = () => {
       .then((result) => setProducts(result));
   }, []);
   const handleClick = (item) => {
-    setDeletedProducts((prev) => [...prev, item]);
+    setDeletedProducts([...deletedProducts, item]);
     setProducts((prev) => prev.filter((p) => p.id !== item.id));
   };
   if (products === null) {

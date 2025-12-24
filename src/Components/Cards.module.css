@@ -1,7 +1,6 @@
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(4, max-content);
-  grid-template-rows: repeat(5, 1fr);
   justify-content: space-between;
   margin: auto;
   max-width: 1300px;
