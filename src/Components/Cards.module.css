@@ -1,0 +1,50 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1300px;
+  width: 100%;
+  row-gap: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px gray;
+  justify-content: space-between;
+  min-height: 350px;
+  padding: 10px;
+}
+.description {
+  height: 35px;
+  overflow: hidden;
+}
+.card img {
+  align-self: center;
+}
+.card p {
+  font-size: 15px;
+}
+.btnWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.btnWrapper button {
+  width: 100%;
+  cursor: pointer;
+}
+.renderingText {
+  display: grid;
+  margin: auto;
+}
+.deletedCardText {
+  text-align: center;
+  margin-top: 20px;
+}
